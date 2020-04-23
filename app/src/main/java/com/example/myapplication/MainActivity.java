@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -37,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Create String Array
 
-        String [] activName = {
+        final String [] activName = {
                 "Training",
                 "Calendar",
                 "Nutrition",
@@ -57,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
 
         mainModels = new ArrayList<>();
         for (int i=0; i< activLogo.length;i++) {
-            MainModel model = new MainModel(activLogo[i],activName[i]);
+            MainModel model = new MainModel(activLogo[i],activName[i],activDescription[i]);
             mainModels.add(model);
         }
 
@@ -69,18 +70,25 @@ public class MainActivity extends AppCompatActivity {
         );
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
-
+        recyclerView.smoothScrollBy(10,20);
         // Set size of space between each object in RecycleView
 
-     //   RecyclerViewMargin decoration = new RecyclerViewMargin(400,activLogo.length);
-       // recyclerView.addItemDecoration(decoration);
+     //  RecyclerViewMargin decoration = new RecyclerViewMargin(400,activLogo.length);
+        //recyclerView.addItemDecoration(decoration);
 
 
         // Initialize MainAdapter
         mainAdapter = new MainAdapter(MainActivity.this,mainModels);
         //Set MainAdapter to RecycleView
         recyclerView.setAdapter(mainAdapter);
-
+        // Initialize OnClickItemListener
+        mainAdapter.setOnItemClickListener(new MainAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(int position) {
+                
+                Toast.makeText(getApplicationContext(),"Twój stary trzeźwy",Toast.LENGTH_LONG).show();
+            }
+        });
 
     }
 }
