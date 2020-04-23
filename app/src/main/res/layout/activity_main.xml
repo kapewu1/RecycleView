@@ -18,14 +18,6 @@
       />
 
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingHorizontal="32dp"
-        android:layout_marginTop="32dp"
-        android:text="Short explanation about current object.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. "
-        android:textAlignment="center" />
-
 
 
 </LinearLayout>

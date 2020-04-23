@@ -37,10 +37,10 @@ public class RecyclerViewMargin extends RecyclerView.ItemDecoration {
         outRect.right = margin;
         //add left margin only to the first column
         if(position%columns==0){
-            outRect.left = width/4;
+            outRect.left = 48;
         }
         if (position%columns == 4){
-            outRect.right = width/7;
+            outRect.right = 64;
         }
 
     }

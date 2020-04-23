@@ -72,8 +72,8 @@ public class MainActivity extends AppCompatActivity {
 
         // Set size of space between each object in RecycleView
 
-        RecyclerViewMargin decoration = new RecyclerViewMargin(400,activLogo.length);
-        recyclerView.addItemDecoration(decoration);
+     //   RecyclerViewMargin decoration = new RecyclerViewMargin(400,activLogo.length);
+       // recyclerView.addItemDecoration(decoration);
 
 
         // Initialize MainAdapter
