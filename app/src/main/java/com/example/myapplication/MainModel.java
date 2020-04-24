@@ -10,6 +10,11 @@ public class MainModel {
         this.activName = activName;
         this.activDescription = activDescription;
     }
+    public MainModel(Integer activLogo, String activName){
+        this.activLogo = activLogo;
+        this.activName = activName;
+    }
+
     public void changeText(String text){
         activName = text;
     }
