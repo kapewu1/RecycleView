@@ -10,13 +10,12 @@
     android:padding="16dp"
     >
 
+
   <androidx.recyclerview.widget.RecyclerView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/recycle_view"
       android:layoutAnimation="@anim/layout_animation_slide_fade"
-      android:rowDelay="90%"
-      android:columnDelay="90%"
       />
 
 

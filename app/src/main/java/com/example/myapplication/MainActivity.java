@@ -5,9 +5,8 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -62,7 +61,6 @@ public class MainActivity extends AppCompatActivity {
             mainModels.add(model);
         }
 
-
         //Design Horizonal Layout
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(
@@ -85,10 +83,44 @@ public class MainActivity extends AppCompatActivity {
         mainAdapter.setOnItemClickListener(new MainAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(int position) {
-                
-                Toast.makeText(getApplicationContext(),"Twój stary trzeźwy",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),Integer.toString(position),Toast.LENGTH_LONG).show();
+                activityIntentHelper(position);
             }
         });
+
+    }
+    public void activityIntentHelper(int position)
+    {
+        int number = position;
+
+        switch (number){
+
+            case 0:{
+            Intent intent = new Intent(this, Training.class);
+                startActivity(intent);
+                break;
+            }
+            case 1:{
+                Intent intent = new Intent(this, Calendar.class);
+                startActivity(intent);
+                break;
+            }
+            case 2:{
+                Intent intent = new Intent(this, Nutrition.class);
+                startActivity(intent);
+                break;
+            }
+            case 3:{
+                Intent intent = new Intent(this, TraningGenerator.class);
+                startActivity(intent);
+                break;
+            }
+            case 4:{
+                Intent intent = new Intent(this, Calculators.class);
+                startActivity(intent);
+                break;
+            }
+        };
 
     }
 }

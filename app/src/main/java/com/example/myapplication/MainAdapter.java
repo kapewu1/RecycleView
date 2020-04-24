@@ -70,6 +70,9 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
         TextView textView;
         TextView descView;
 
+        public TextView getTextView() {
+            return textView;
+        }
 
         public ViewHolder(@NonNull View itemView, final OnItemClickListener clickListener) {
             super(itemView);
