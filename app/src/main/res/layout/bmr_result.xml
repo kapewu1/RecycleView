@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".BMR_Result">
+
+    <TextView
+        android:id="@+id/bmr_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMR : 0"
+        android:textSize="35dp"
+        android:layout_gravity="center|left"
+        android:layout_marginTop="60dp"
+
+        />
+    <TextView
+        android:id="@+id/cpm_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CPM : 0"
+        android:textSize="35dp"
+        android:layout_gravity="center|left"
+        android:layout_marginTop="60dp"
+
+        />
+
+    <TextView
+        android:id="@+id/cal_to_lose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aby schudnąć : 0"
+        android:textSize="25dp"
+        android:layout_gravity="center|left"
+        android:layout_marginTop="60dp"
+
+        />
+
+    <TextView
+        android:id="@+id/cal_to_grow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aby przytyć : 0"
+        android:textSize="25dp"
+        android:layout_gravity="center|left"
+        android:layout_marginTop="60dp"
+
+        />
+
+
+</LinearLayout>

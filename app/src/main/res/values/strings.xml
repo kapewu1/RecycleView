@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string-array name="activity_level">
+        <item>Brak aktywności fizycznej</item>
+        <item>Niska aktywność, praca siedząca i 1-2 treningi w tygodniu</item>
+        <item>Srednia aktywność, trening około 3-4 razy w tygodniu</item>
+        <item>Wzmożona aktywność, trening 4-5 razy w tygodniu</item>
+        <item>Bardzo wysoka aktywność fizyczna, 5 i więcej treningów w tygodniu</item>
+    </string-array>
+
 </resources>

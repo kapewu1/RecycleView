@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="UNDER_16">Wygłodzenie</string>
+    <string name="TO_17">Wychudzenie(spowodowane często przez ciężką chorobę)</string>
+    <string name="TO_18">Niedowaga</string>
+    <string name="TO_25">Wartość Prawidłowa</string>
+    <string name="TO_30">Nadwaga</string>
+    <string name="TO_35">I Stopień Otyłości</string>
+    <string name="TO_40">II Stopień Otyłości</string>
+    <string name="ABOVE_40">III Stopień Otyłości (otyłość skrajna)</string>
+
+</resources>

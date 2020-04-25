@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".BMI_Calculator">
+
+
+    <EditText
+        android:id="@+id/current_leanmass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/textDisplayColor"
+        android:ems="10"
+        android:inputType="numberDecimal|numberSigned"
+        android:hint="Podaj suchą mase mięśniową (w kg)"/>
+    <EditText
+        android:id="@+id/current_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/textDisplayColor"
+        android:ems="10"
+        android:inputType="numberDecimal|numberSigned"
+        android:hint="Podaj Wagę (w kg)"/>
+
+    <EditText
+        android:id="@+id/bf_percent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/textDisplayColor"
+        android:ems="10"
+        android:inputType="numberDecimal|numberSigned"
+        android:hint="Procent tkanki do którego dążysz"/>
+
+
+    <EditText
+        android:id="@+id/weekWeigthLoss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/textDisplayColor"
+        android:ems="10"
+        android:inputType="numberDecimal|numberSigned"
+        android:hint="Tygodniowy spadek wagi"/>
+
+
+
+    <Button
+        android:id="@+id/summitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/calc_button"
+        android:textColor="@drawable/text_on_pressed"
+        android:text="Oblicz"
+        />
+
+
+    <TextView
+        android:id="@+id/reduction_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Data"
+        android:textSize="35dp"
+        android:textColor="@color/textDisplayColor"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        />
+</LinearLayout>
