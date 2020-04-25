@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".OneRep_Calculator"></activity>
+        <activity android:name=".ShoppingList"></activity>
+        <activity android:name=".OneRep_Calculator" />
         <activity android:name=".Reduction_Calculator" />
         <activity android:name=".BodyFat_Result" />
         <activity android:name=".BodyFat_Calculator" />

@@ -1,4 +1,16 @@
 <resources>
+
+    <string-array name="ACTIVITIES">
+        <item>Training</item>
+        <item>Calendar</item>
+        <item>Nutrition</item>
+        <item>Training Generator</item>
+        <item>Fitness Calculators</item>
+        <item>Lista Zakupów</item>
+    </string-array>
+
+    <string name="twojstary">Twoj stary</string>
+
     <string-array name="activity_level">
         <item>Brak aktywności fizycznej</item>
         <item>Niska aktywność, praca siedząca i 1-2 treningi w tygodniu</item>
@@ -6,5 +18,16 @@
         <item>Wzmożona aktywność, trening 4-5 razy w tygodniu</item>
         <item>Bardzo wysoka aktywność fizyczna, 5 i więcej treningów w tygodniu</item>
     </string-array>
+
+    <string-array name="DESCRIPTION">
+        <item>Twój własny plan treningowy. Zaplanuj swoje treningi w oparciu o Generator Treningu i zapisz je tutaj by zyskać możliwość śledzenia swoich postępów oraz monitorowania czy twój trening przynosi zakładane rezultaty</item>
+        <item>Terminarz pozwoli ci na dokładne śledzenie twojej aktywności fizycznej oraz założeń żywieniowych na przestrzeni twojej drogi po idealną sylwetkę. Zapisuj swoje postępy, aby nigdy o nich nie zapomnieć</item>
+        <item>Dieta to najważniejsza składowa procesu budowania idealne sylwetki. Zapisuj swój dzienny jadłospis w oparciu o wszystkie makro i mikro składniki, utrzymuj bilans kaloryczny zgodnie z wytycznymi, aby osiągnąć zamierzony efekt</item>
+        <item>Stwórz swój własny plan treningowy w oparciu o naszą bazę danych ćwiczeń i dostosuj go tak, aby spełniał twoje wszelkie wymagania. Określ swoje cele i działaj!</item>
+        <item>Aby móc prawidłowo oszacować ilość spożywanych kalorii, sprawdzić obecy poziom tkanki tłuszczowej, czy też określić idealną wagę określaną na podstawie naszych parametrów z pomocą przychodzą kalkulatory ułatwiające rozpoczęcie drogi ze zdorwym odżywianiem"</item>
+        <item>Miej swoją listę zakupów zawsze pod ręką tak, aby twoje decyzje zakupowe pokrywały się z założeniami jadłospisu w twojej diecie</item>
+
+    </string-array>
+
 
 </resources>
