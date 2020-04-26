@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.ShoppingList;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.myapplication.R;
 
 public class ShoppingAdapter extends RecyclerView.Adapter <ShoppingAdapter.ShoppingViewHolder>{
    private Context mContext;
@@ -30,11 +32,13 @@ public class ShoppingAdapter extends RecyclerView.Adapter <ShoppingAdapter.Shopp
     public void onBindViewHolder(@NonNull ShoppingViewHolder holder, int position) {
         if(!mCursor.moveToPosition(position)){return;}
 
-        String name = mCursor.getString(mCursor.getColumnIndex(ShopContract.ShopEntry.COLUMN_NAME));
-        int amount = mCursor.getInt(mCursor.getColumnIndex(ShopContract.ShopEntry.COLUMN_AMOUNT));
+        String name = mCursor.getString(mCursor.getColumnIndex(ShoppingContract.ShoppingEntry.COLUMN_NAME));
+        int amount = mCursor.getInt(mCursor.getColumnIndex(ShoppingContract.ShoppingEntry.COLUMN_AMOUNT));
+        long id = mCursor.getLong(mCursor.getColumnIndex(ShoppingContract.ShoppingEntry._ID));
 
         holder.nameText.setText(name);
         holder.countText.setText(String.valueOf(amount));
+        holder.itemView.setTag(id);
     }
 
     @Override

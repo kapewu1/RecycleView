@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.MainPage;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DefaultItemAnimator;
@@ -9,7 +9,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import java.lang.reflect.Array;
+import com.example.myapplication.Calculators;
+import com.example.myapplication.Calendar;
+import com.example.myapplication.Hydration;
+import com.example.myapplication.Nutrition;
+import com.example.myapplication.R;
+import com.example.myapplication.ShoppingList.ShoppingList;
+import com.example.myapplication.Training;
+import com.example.myapplication.TraningGenerator;
+
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -34,7 +42,8 @@ public class MainActivity extends AppCompatActivity {
                 R.drawable.diet,
                 R.drawable.kettlebell,
                 R.drawable.calculator,
-                R.drawable.market
+                R.drawable.market,
+                R.drawable.water
         };
 
         //Create String Array
@@ -72,7 +81,6 @@ public class MainActivity extends AppCompatActivity {
         mainAdapter.setOnItemClickListener(new MainAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(int position) {
-                Toast.makeText(getApplicationContext(),Integer.toString(position),Toast.LENGTH_LONG).show();
                 activityIntentHelper(position);
             }
         });
@@ -110,6 +118,10 @@ public class MainActivity extends AppCompatActivity {
                 break;
             } case 5:{
                 Intent intent = new Intent(this, ShoppingList.class);
+                startActivity(intent);
+                break;
+            }case 6:{
+                Intent intent = new Intent(this, Hydration.class);
                 startActivity(intent);
                 break;
             }

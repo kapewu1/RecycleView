@@ -1,6 +1,8 @@
-package com.example.myapplication;
+package com.example.myapplication.ShoppingList;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -13,6 +15,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.myapplication.R;
 
 public class ShoppingList extends AppCompatActivity {
    private SQLiteDatabase DATABASE;
@@ -32,6 +36,19 @@ public class ShoppingList extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         ADAPTER = new ShoppingAdapter(this,getAllItems());
         recyclerView.setAdapter(ADAPTER);
+
+        new ItemTouchHelper(new ItemTouchHelper.SimpleCallback(0,
+                ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT) {
+            @Override
+            public boolean onMove(@NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder, @NonNull RecyclerView.ViewHolder target) {
+                return false;
+            }
+
+            @Override
+            public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
+                removeItem((long) viewHolder.itemView.getTag());
+            }
+        }).attachToRecyclerView(recyclerView);
 
         inputData = findViewById(R.id.edittext_name);
         textAmount = findViewById(R.id.textview_amount);
@@ -64,6 +81,11 @@ public class ShoppingList extends AppCompatActivity {
         });
 
     }
+    private void removeItem(long id){
+        DATABASE.delete(ShoppingContract.ShoppingEntry.TABLE_NAME,
+                ShoppingContract.ShoppingEntry._ID + "=" + id,null);
+                ADAPTER.swapCursor(getAllItems());
+    }
     private void increase() {
         mAmount++;
         textAmount.setText(String.valueOf(mAmount));
@@ -81,10 +103,10 @@ public class ShoppingList extends AppCompatActivity {
         String name = inputData.getText().toString();
         ContentValues cv = new ContentValues();
 
-        cv.put(ShopContract.ShopEntry.COLUMN_NAME,name);
-        cv.put(ShopContract.ShopEntry.COLUMN_AMOUNT,mAmount);
+        cv.put(ShoppingContract.ShoppingEntry.COLUMN_NAME,name);
+        cv.put(ShoppingContract.ShoppingEntry.COLUMN_AMOUNT,mAmount);
 
-        DATABASE.insert(ShopContract.ShopEntry.TABLE_NAME,null, cv);
+        DATABASE.insert(ShoppingContract.ShoppingEntry.TABLE_NAME,null, cv);
         ADAPTER.swapCursor(getAllItems());
         inputData.getText().clear();
 
@@ -92,13 +114,13 @@ public class ShoppingList extends AppCompatActivity {
     }
     private Cursor getAllItems(){
         return DATABASE.query(
-                ShopContract.ShopEntry.TABLE_NAME,
+                ShoppingContract.ShoppingEntry.TABLE_NAME,
                 null,
                 null,
                 null,
                 null,
                 null,
-                ShopContract.ShopEntry.COLUMN_TIMESTAMP+" DESC"
+                ShoppingContract.ShoppingEntry.COLUMN_TIMESTAMP+" DESC"
         );
     }
 }

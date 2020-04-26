@@ -7,6 +7,7 @@
         <item>Training Generator</item>
         <item>Fitness Calculators</item>
         <item>Lista Zakupów</item>
+        <item>Nawodnienie</item>
     </string-array>
 
     <string name="twojstary">Twoj stary</string>
@@ -26,7 +27,7 @@
         <item>Stwórz swój własny plan treningowy w oparciu o naszą bazę danych ćwiczeń i dostosuj go tak, aby spełniał twoje wszelkie wymagania. Określ swoje cele i działaj!</item>
         <item>Aby móc prawidłowo oszacować ilość spożywanych kalorii, sprawdzić obecy poziom tkanki tłuszczowej, czy też określić idealną wagę określaną na podstawie naszych parametrów z pomocą przychodzą kalkulatory ułatwiające rozpoczęcie drogi ze zdorwym odżywianiem"</item>
         <item>Miej swoją listę zakupów zawsze pod ręką tak, aby twoje decyzje zakupowe pokrywały się z założeniami jadłospisu w twojej diecie</item>
-
+        <item>Przyjmowanie odpowiedniej ilości wody pomaga w utracie zbędnych kilogramów. Dzięki temu podkręcamy metabolizm, a organizm działa szybciej i sprawniej. Kontroluj ile wody przyjmujesz w ciągu dnia</item>
     </string-array>
 
 

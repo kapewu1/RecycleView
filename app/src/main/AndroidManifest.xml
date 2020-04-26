@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ShoppingList"></activity>
+        <activity android:name=".Hydration"></activity>
+        <activity android:name=".ShoppingList.ShoppingList" />
         <activity android:name=".OneRep_Calculator" />
         <activity android:name=".Reduction_Calculator" />
         <activity android:name=".BodyFat_Result" />
@@ -22,7 +23,7 @@
         <activity android:name=".Nutrition" />
         <activity android:name=".Calendar" />
         <activity android:name=".Training" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainPage.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
