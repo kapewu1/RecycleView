@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.FitCalculators;
 
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,6 +11,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.example.myapplication.R;
 
 public class BMI_Calculator extends AppCompatActivity implements View.OnClickListener {
     Button summitButton;

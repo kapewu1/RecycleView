@@ -2,15 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginLeft="32dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginRight="16dp"
     >
-
-    <TextView
-        android:id="@+id/textview_amount_item"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="0"
-        android:textSize="30sp" />
 
     <TextView
         android:id="@+id/textview_name_item"
@@ -19,5 +15,13 @@
         android:layout_marginStart="8dp"
         android:text="Empty Item"
         android:textSize="30sp" />
+    <TextView
+        android:id="@+id/textview_amount_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:text="0"
+        android:textSize="30sp" />
+
 
 </LinearLayout>

@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:padding="16dp"
 
-    tools:context=".BMR_Calculator">
+    tools:context=".FitCalculators.BMR_Calculator">
 
 
 

@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.FitCalculators;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,17 +6,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.example.myapplication.R;
 
 
 public class BMR_Calculator extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
@@ -66,7 +63,7 @@ public class BMR_Calculator extends AppCompatActivity implements AdapterView.OnI
                     int cpm_grow = cpm + 300;
 
 
-                    Intent intent = new Intent(BMR_Calculator.this,BMR_Result.class);
+                    Intent intent = new Intent(BMR_Calculator.this, BMR_Result.class);
 
                     intent.putExtra("BMR",bmr);
                     intent.putExtra("CPM",cpm);

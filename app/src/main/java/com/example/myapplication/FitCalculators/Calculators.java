@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.FitCalculators;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DefaultItemAnimator;
@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.widget.ImageView;
 
 import com.example.myapplication.MainPage.MainModel;
+import com.example.myapplication.R;
 
 import java.util.ArrayList;
 
@@ -24,14 +25,6 @@ public class Calculators extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculators);
-        // posprzątać ten błagan
-        //backbuttom = findViewById(R.id.backbutton);
-      //  backbuttom.setOnClickListener(new View.OnClickListener() {
-         //   @Override
-        //        Intent intent = new Intent(Calculators.this, MainActivity.class);
-       //         startActivity(intent);
-       //     }
-     //  });
 
         //Initializate RecycleView
 

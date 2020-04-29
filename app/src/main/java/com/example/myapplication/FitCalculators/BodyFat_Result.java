@@ -1,10 +1,12 @@
-package com.example.myapplication;
+package com.example.myapplication.FitCalculators;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.example.myapplication.R;
 
 public class BodyFat_Result extends AppCompatActivity {
     private TextView bf_navy;

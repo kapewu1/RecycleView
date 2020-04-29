@@ -9,7 +9,11 @@
     <EditText
         android:id="@+id/edittext_name"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="16dp"
+        android:background="@null"
+        />
 
     <TextView
         android:id="@+id/textview_amount"
@@ -53,6 +57,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/shop_recycleView"
+        android:layout_marginTop="32dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/textview_amount"/>

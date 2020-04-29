@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:padding="16dp"
 
-    tools:context=".BodyFat_Calculator">
+    tools:context=".FitCalculators.BodyFat_Calculator">
 
     <RadioGroup
         android:id="@+id/radioGroup"

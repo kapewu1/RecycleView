@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.FitCalculators;
 
 
 import android.content.Context;
@@ -12,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.myapplication.MainPage.MainModel;
+import com.example.myapplication.R;
 
 import java.util.ArrayList;
 

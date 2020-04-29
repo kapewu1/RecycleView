@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Hydration">
+    tools:context=".Hydration.Hydration">
 
     
     <ImageView
         android:id="@+id/glass_water"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
         android:src="@drawable/glassofwatter"/>
 
     <TextView
@@ -24,6 +25,25 @@
         android:textSize="30dp"
         android:textStyle="bold"/>
 
+    <TextView
+        android:id="@+id/value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quantity"
+        android:text="0 ml"
+        android:textSize="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+
+        />
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/value"
+        android:layout_marginHorizontal="32dp"
+        />
 
     
 </RelativeLayout>

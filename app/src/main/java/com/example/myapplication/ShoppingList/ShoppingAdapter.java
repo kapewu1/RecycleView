@@ -37,7 +37,7 @@ public class ShoppingAdapter extends RecyclerView.Adapter <ShoppingAdapter.Shopp
         long id = mCursor.getLong(mCursor.getColumnIndex(ShoppingContract.ShoppingEntry._ID));
 
         holder.nameText.setText(name);
-        holder.countText.setText(String.valueOf(amount));
+        holder.countText.setText(String.valueOf("x"+amount));
         holder.itemView.setTag(id);
     }
 

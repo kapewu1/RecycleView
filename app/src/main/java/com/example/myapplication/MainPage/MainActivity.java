@@ -7,11 +7,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Toast;
 
-import com.example.myapplication.Calculators;
+import com.example.myapplication.FitCalculators.Calculators;
 import com.example.myapplication.Calendar;
-import com.example.myapplication.Hydration;
+import com.example.myapplication.Hydration.Hydration;
 import com.example.myapplication.Nutrition;
 import com.example.myapplication.R;
 import com.example.myapplication.ShoppingList.ShoppingList;
@@ -67,11 +66,6 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.smoothScrollBy(10,20);
-        // Set size of space between each object in RecycleView
-
-     //  RecyclerViewMargin decoration = new RecyclerViewMargin(400,ACTIVITY_LOGO.length);
-        //recyclerView.addItemDecoration(decoration);
-
 
         // Initialize MainAdapter
         mainAdapter = new MainAdapter(MainActivity.this,mainModels);

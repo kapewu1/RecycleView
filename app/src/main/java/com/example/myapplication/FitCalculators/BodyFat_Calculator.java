@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.FitCalculators;
 
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+
+import com.example.myapplication.R;
 
 public class BodyFat_Calculator extends AppCompatActivity {
     RadioGroup radioGroup;
@@ -47,7 +49,7 @@ public class BodyFat_Calculator extends AppCompatActivity {
                 double lean_mass = roundDoubles(weight - fat_mass);
 
 
-                Intent intent =  new Intent(BodyFat_Calculator.this,BodyFat_Result.class);
+                Intent intent =  new Intent(BodyFat_Calculator.this, BodyFat_Result.class);
                 intent.putExtra("bf_navy",bf_cal_navy);
                 intent.putExtra("bf_bmi",bf_cal_bmi);
                 intent.putExtra("fat_mass",fat_mass);
